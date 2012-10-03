@@ -1,5 +1,6 @@
 #
-# Displays Python information.
+# Exposes information about the Python environment via the $python_info
+# associative array.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
@@ -14,7 +15,7 @@ typeset -gA python_info
 
 # Format virtualenv.
 if [[ -n "$VIRTUAL_ENV" ]]; then
-  zstyle -s ':prezto:module:python' virtualenv 'virtualenv_format'
+  zstyle -s ':prezto:module:python:info:virtualenv' format 'virtualenv_format'
   zformat -f virtualenv_formatted "$virtualenv_format" "v:${VIRTUAL_ENV:t}"
   python_info[virtualenv]="$virtualenv_formatted"
 fi
