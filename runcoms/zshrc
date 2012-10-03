@@ -12,17 +12,21 @@ fi
 
 # Customize to your needs...
 
-export PATH=$HOME'/bin':$HOME'/opt/mvn2/bin':$PATH
+export PATH=$HOME'/bin':$HOME'/opt/mvn2/bin':'/usr/local/share/npm/bin':$PATH
 export LANG=en_US.UTF-8
 export JAVA_HOME=`/usr/libexec/java_home`
 
-export NODE_PATH=/usr/local/lib/node_modules
+export NODE_PATH=/usr/local/share/npm/bin
 
-alias runmongo='mongod run --config /usr/local/Cellar/mongodb/2.0.2-x86_64/mongod.conf'
+export KODE=$HOME/Customers/Forskningsradet/kode/
+export SOLR_HOME=$HOME/opt/solr/
+
+# alias runmongo='mongod run --config /usr/local/Cellar/mongodb/2.0.2-x86_64/mongod.conf'
 alias ssbt='sbt -J"-noverify -javaagent:/Users/ovstetun/opt/JRebel/jrebel.jar -Drebel.lift_plugin=true"'
 
 alias ems='javaws http://javazone.no/ems/webstart/launch.jnlp'
 
-
 alias mci='mvn clean install'
 alias mct='mvn clean test'
+
+alias asadmin=/Users/ovstetun/opt/gf3/bin/asadmin

@@ -5,3 +5,5 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/vim
