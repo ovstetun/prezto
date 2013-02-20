@@ -34,6 +34,8 @@ alias ems='javaws http://javazone.no/ems/webstart/launch.jnlp'
 alias mci='mvn clean install'
 alias mct='mvn clean test'
 
+alias tower=gittower
+
 alias asadmin=/Users/ovstetun/opt/gf3/bin/asadmin
 
 alias startpg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
@@ -41,3 +43,8 @@ alias stoppg='pg_ctl -D /usr/local/var/postgres -l logfile start'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export JSTESTDRIVER_HOME=~/bin/jstestdriver
+export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/r21.0.1
+
