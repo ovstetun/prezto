@@ -33,6 +33,7 @@ alias ems='javaws http://javazone.no/ems/webstart/launch.jnlp'
 
 alias mci='mvn clean install'
 alias mct='mvn clean test'
+export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=256m"
 
 alias tower=gittower
 
@@ -48,3 +49,4 @@ export JSTESTDRIVER_HOME=~/bin/jstestdriver
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/r21.0.1
 
+export ESAK_LEVERANSEOMRADE=/Users/ovstetun/Customers/Kulturradet/kode/Leveranse/eSak
