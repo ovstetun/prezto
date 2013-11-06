@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 
-export PATH=$HOME'/bin':$HOME'/opt/mvn2/bin':'/usr/local/share/npm/bin':$PATH
+export PATH=$HOME'/bin':'/usr/local/android-sdk/tools':'/usr/local/android-sdk/platform-tools':$PATH
 export LANG=en_US.UTF-8
 export JAVA_HOME6=`/usr/libexec/java_home --version 1.6`
 export JAVA_HOME7=`/usr/libexec/java_home --version 1.7`
@@ -33,7 +33,7 @@ alias ems='javaws http://javazone.no/ems/webstart/launch.jnlp'
 
 alias mci='mvn clean install'
 alias mct='mvn clean test'
-export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=256m"
+export MAVEN_OPTS="-Xmx3072m -XX:MaxPermSize=512m"
 
 alias tower=gittower
 
